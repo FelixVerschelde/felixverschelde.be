@@ -14,7 +14,7 @@ const aboutMe = [
 
 const myProjects = [
     "<p class=discription>You can find all my projects where I worked on so far here: </p>",
-    "<a href=https://github.com/FelixVerschelde target=blank>Github</a>"
+    "<a href=https://github.com/FelixVerschelde?tab=repositories target=blank>Github</a>"
 ]
 
 const mySocials = [

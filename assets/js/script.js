@@ -15,13 +15,10 @@ function init() {
     });
 }
 
-
 function checkCommand(e) {
     e.preventDefault();
     command(e.target.value);
 }
-
-
 
 function help() {
     const textarea = document.querySelector("textarea");
