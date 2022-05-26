@@ -1,0 +1,51 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-family: monospace;
+    white-space: pre;
+    display: flex;
+}
+
+h2 {
+    margin: 2rem;
+    size: 1.5rem;
+}
+
+.help {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.discription {
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+}
+
+.terminal {
+    display: inline-block;
+    height: 2rem;
+    margin-left: 2rem;
+}
+
+textarea {
+    background-color: black;
+    border: none;
+    font-weight: bold;
+    outline: none;
+    resize: none;
+    height: 1rem;
+    caret-color: white;
+}
+
+#searchbar {
+    color: #F9D71C;
+}
+
