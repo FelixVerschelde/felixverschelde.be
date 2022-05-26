@@ -3,6 +3,7 @@
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
+    document.addEventListener("click", setFocus);
     const searchbar = document.querySelector('#searchbar');
     searchbar.addEventListener('keydown', e => {
         const enterKeyCode = 13;
@@ -15,18 +16,22 @@ function init() {
     });
 }
 
+function setFocus() {
+    document.querySelector('#searchbar').focus();
+}
+
 function checkCommand(e) {
     e.preventDefault();
     command(e.target.value);
 }
 
-function help() {
+function displayCommand(array) {
     const textarea = document.querySelector("textarea");
     const $ul = document.querySelector("ul");
     $ul.innerHTML = "";
     let $html = "";
 
-    helpArray.forEach(element => {
+    array.forEach(element => {
         $html += `<li>${element}</li>`;
     });
 
@@ -34,43 +39,24 @@ function help() {
     textarea.value = "";
 }
 
+function help() {
+    const array = helpArray;
+    displayCommand(array);
+}
+
 function about() {
-    const textarea = document.querySelector("textarea");
-    const $div = document.querySelector("div");
-    let $html = "";
-
-    aboutMe.forEach(element => {
-        $html += `<p>${element}</p>`;
-    });
-
-    $div.insertAdjacentHTML('beforeend', $html);
-    textarea.value = "";
+    const array = aboutMe;
+    displayCommand(array);
 }
 
 function projects() {
-    const textarea = document.querySelector("textarea");
-    const $div = document.querySelector("div");
-    let $html = "";
-
-    myProjects.forEach(element => {
-        $html += `<p>${element}</p>`;
-    });
-
-    $div.insertAdjacentHTML('beforeend', $html);
-    textarea.value = "";
+    const array = myProjects;
+    displayCommand(array);
 }
 
 function socials() {
-    const textarea = document.querySelector("textarea");
-    const $div = document.querySelector("div");
-    let $html = "";
-
-    mySocials.forEach(element => {
-        $html += `<p>${element}</p>`;
-    });
-
-    $div.insertAdjacentHTML('beforeend', $html);
-    textarea.value = "";
+    const array = mySocials;
+    displayCommand(array);
 }
 
 function clear() {
