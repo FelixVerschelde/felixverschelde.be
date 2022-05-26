@@ -27,6 +27,6 @@ const mySocials = [
     "<h3 class=title>Socials</h3>",
 
     "<p class=text>You can find all my socials here: </p>",
-    "<a href=https://www.linkedin.com/in/felixverschelde target=blank class=link>LinkedIn</a>",
+    "<a href=https://www.linkedin.com/in/felix-verschelde-2a6193240/ target=blank class=link>LinkedIn</a>",
     "<a href=https://www.facebook.com/profile.php?id=100012648430952 target=blank class=link>Facebook</a>",
 ]
