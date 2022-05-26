@@ -19,7 +19,6 @@ h2 {
 }
 
 .terminal {
-    display: inline-block;
     display: flex;
     align-items: center;
     margin-left: 2rem;
@@ -59,11 +58,12 @@ textarea {
     font-weight: bold;
     outline: none;
     resize: none;
+    overflow: hidden;
     height: 0.8rem;
     caret-color: #F9D71C;
-    overflow-y: visible;
 }
 
 #searchbar {
     color: #F9D71C;
-}
+    width: 75%;
+  }
