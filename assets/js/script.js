@@ -59,12 +59,15 @@ function socials() {
     displayCommand(array);
 }
 
+function secret() {
+    const array = mySecret;
+    displayCommand(array);
+}
+
 function clear() {
     const textarea = document.querySelector("textarea");
-    const $div = document.querySelector("div");
     const $ul = document.querySelector("ul");
     $ul.innerHTML = "";
-    $div.innerHTML = "";
     textarea.value = "";
 }
 
@@ -80,10 +83,13 @@ function command(cmd) {
             projects();
             break;
         case 'socials':
-            socials();
+            socials();                           
             break;
         case 'clear':
             clear();
+            break;
+        case 'secret':
+            secret();
             break;
         default:
             console.log('Command not found');

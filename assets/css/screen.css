@@ -18,6 +18,10 @@ h2 {
     size: 1.5rem;
 }
 
+label {
+    color: #F9D71C;
+}
+
 .terminal {
     display: flex;
     align-items: center;
@@ -40,9 +44,21 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-.link {
+ul {
+    margin-bottom: 1.5rem;
+}
+
+li {
+    margin-bottom: 1.5rem;
+}
+
+li>span {
     margin-left: 2rem;
     margin-bottom: 1.5rem;
+}
+
+.link{
+    margin-left: 1rem;
 }
 
 .title {
@@ -59,11 +75,16 @@ textarea {
     outline: none;
     resize: none;
     overflow: hidden;
-    height: 0.8rem;
+    height: 1rem;
     caret-color: #F9D71C;
+}
+
+a {
+    color: blue;
 }
 
 #searchbar {
     color: #F9D71C;
     width: 75%;
+    font-size: 0.85rem;
   }
